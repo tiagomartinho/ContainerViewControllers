@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		24CE84D521C273180085B65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84D421C273180085B65B /* AppDelegate.swift */; };
-		24CE84D721C273180085B65B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84D621C273180085B65B /* ViewController.swift */; };
+		24CE84D721C273180085B65B /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84D621C273180085B65B /* ParentViewController.swift */; };
 		24CE84DC21C273190085B65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CE84DB21C273190085B65B /* Assets.xcassets */; };
 		24CE84DF21C273190085B65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE84DD21C273190085B65B /* LaunchScreen.storyboard */; };
 		24CE84F621C2769B0085B65B /* TestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84F521C2769B0085B65B /* TestExample.swift */; };
+		24CE84F821C276E50085B65B /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84F721C276E50085B65B /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +28,14 @@
 /* Begin PBXFileReference section */
 		24CE84D121C273180085B65B /* ContainerViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CE84D421C273180085B65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24CE84D621C273180085B65B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24CE84D621C273180085B65B /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		24CE84DB21C273190085B65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24CE84DE21C273190085B65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24CE84E021C273190085B65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24CE84E521C273190085B65B /* ContainerViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainerViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CE84EB21C273190085B65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24CE84F521C2769B0085B65B /* TestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExample.swift; sourceTree = "<group>"; };
+		24CE84F721C276E50085B65B /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				24CE84D421C273180085B65B /* AppDelegate.swift */,
-				24CE84D621C273180085B65B /* ViewController.swift */,
+				24CE84D621C273180085B65B /* ParentViewController.swift */,
+				24CE84F721C276E50085B65B /* ChildViewController.swift */,
 				24CE84F421C276360085B65B /* Supporting Files */,
 			);
 			path = ContainerViewControllers;
@@ -202,8 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24CE84D721C273180085B65B /* ViewController.swift in Sources */,
+				24CE84D721C273180085B65B /* ParentViewController.swift in Sources */,
 				24CE84D521C273180085B65B /* AppDelegate.swift in Sources */,
+				24CE84F821C276E50085B65B /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

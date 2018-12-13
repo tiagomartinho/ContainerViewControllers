@@ -2,12 +2,30 @@ import UIKit
 
 class ParentViewController: UIViewController {
 
-    let childVC = ChildViewController()
+    private let childVC = ChildViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
-        addChildViewController()
+        addToogleButton()
+    }
+
+    private func addToogleButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Toogle", style: .plain, target: self, action: #selector(toggle))
+    }
+
+    @objc private func toggle() {
+        let isPresenting = !children.isEmpty
+        isPresenting ? removeChildViewController() : addChildViewController()
+    }
+
+    private func removeChildViewController() {
+        // Notify Child View Controller
+        childVC.willMove(toParent: nil)
+        // Remove the child’s root view from your container’s view hierarchy
+        childVC.view!.removeFromSuperview()
+        // Remove Child From Parent View Controller
+        childVC.removeFromParent()
     }
 
     private func addChildViewController() {

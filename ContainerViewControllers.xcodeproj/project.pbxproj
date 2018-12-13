@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		24CE84D521C273180085B65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84D421C273180085B65B /* AppDelegate.swift */; };
 		24CE84D721C273180085B65B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84D621C273180085B65B /* ViewController.swift */; };
-		24CE84DA21C273180085B65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE84D821C273180085B65B /* Main.storyboard */; };
 		24CE84DC21C273190085B65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CE84DB21C273190085B65B /* Assets.xcassets */; };
 		24CE84DF21C273190085B65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE84DD21C273190085B65B /* LaunchScreen.storyboard */; };
-		24CE84EA21C273190085B65B /* ContainerViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84E921C273190085B65B /* ContainerViewControllersTests.swift */; };
+		24CE84F621C2769B0085B65B /* TestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE84F521C2769B0085B65B /* TestExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,12 @@
 		24CE84D121C273180085B65B /* ContainerViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CE84D421C273180085B65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24CE84D621C273180085B65B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24CE84D921C273180085B65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24CE84DB21C273190085B65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24CE84DE21C273190085B65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24CE84E021C273190085B65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24CE84E521C273190085B65B /* ContainerViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainerViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		24CE84E921C273190085B65B /* ContainerViewControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewControllersTests.swift; sourceTree = "<group>"; };
 		24CE84EB21C273190085B65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CE84F521C2769B0085B65B /* TestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +77,7 @@
 			children = (
 				24CE84D421C273180085B65B /* AppDelegate.swift */,
 				24CE84D621C273180085B65B /* ViewController.swift */,
-				24CE84D821C273180085B65B /* Main.storyboard */,
-				24CE84DB21C273190085B65B /* Assets.xcassets */,
-				24CE84DD21C273190085B65B /* LaunchScreen.storyboard */,
-				24CE84E021C273190085B65B /* Info.plist */,
+				24CE84F421C276360085B65B /* Supporting Files */,
 			);
 			path = ContainerViewControllers;
 			sourceTree = "<group>";
@@ -90,10 +85,20 @@
 		24CE84E821C273190085B65B /* ContainerViewControllersTests */ = {
 			isa = PBXGroup;
 			children = (
-				24CE84E921C273190085B65B /* ContainerViewControllersTests.swift */,
+				24CE84F521C2769B0085B65B /* TestExample.swift */,
 				24CE84EB21C273190085B65B /* Info.plist */,
 			);
 			path = ContainerViewControllersTests;
+			sourceTree = "<group>";
+		};
+		24CE84F421C276360085B65B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24CE84DB21C273190085B65B /* Assets.xcassets */,
+				24CE84DD21C273190085B65B /* LaunchScreen.storyboard */,
+				24CE84E021C273190085B65B /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +154,7 @@
 					};
 					24CE84E421C273190085B65B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 24CE84D021C273180085B65B;
 					};
 				};
@@ -179,7 +185,6 @@
 			files = (
 				24CE84DF21C273190085B65B /* LaunchScreen.storyboard in Resources */,
 				24CE84DC21C273190085B65B /* Assets.xcassets in Resources */,
-				24CE84DA21C273180085B65B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24CE84EA21C273190085B65B /* ContainerViewControllersTests.swift in Sources */,
+				24CE84F621C2769B0085B65B /* TestExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +226,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		24CE84D821C273180085B65B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24CE84D921C273180085B65B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		24CE84DD21C273190085B65B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = ContainerViewControllers/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContainerViewControllers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = ContainerViewControllers/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContainerViewControllers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,6 +394,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = ContainerViewControllersTests/Info.plist;
@@ -407,6 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.ContainerViewControllersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContainerViewControllers.app/ContainerViewControllers";
@@ -418,6 +417,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = ContainerViewControllersTests/Info.plist;

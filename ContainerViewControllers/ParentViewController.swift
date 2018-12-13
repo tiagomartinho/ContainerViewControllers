@@ -7,10 +7,17 @@ class ParentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
+        addChildViewController()
+    }
+
+    private func addChildViewController() {
+        // Add Child View Controller
         addChild(childVC)
-        let childView = childVC.view!
-        view.addSubview(childView)
-        addConstraints(childView)
+        // Add the child’s root view to your container’s view hierarchy
+        view.addSubview(childVC.view!)
+        // Setting constraints for managing the size and position of the child’s root view
+        addConstraints(childVC.view!)
+        // Notify Child View Controller
         childVC.didMove(toParent: self)
     }
 
